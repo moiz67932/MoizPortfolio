@@ -6,73 +6,79 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg';
+import CalendlyEmbed from './CalendlyEmbed';
 
 const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
-      <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
+      {/* <div className='max-w-[1240px] m-auto px-2 py-16 w-full '> */}
+      <div className='max-w-[1240px] m-auto px-2 pt-8 w-full '>
+         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Contact
         </p>
         <h2 className='py-4'>Get In Touch</h2>
+        </div>
+        {/* <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
+          Contact
+        </p>
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
-          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
-            <div className='lg:p-4 h-full '>
-              <div>
-                <Image
-                  className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src={ContactImg}
-                  alt='/'
-                />
-              </div>
-              <div>
-                <h2 className='py-2'>Muhammad Moiz</h2>
-                <p>Front-End Developer</p>
-                <p className='py-4'>
-                  I am available for Freelance Projects. Contact
-                  me and let&apos;s talk.
-                </p>
-              </div>
-              <div>
-                <p className='uppercase pt-8'>Connect With Me</p>
-                <div className='flex items-center justify-between py-4'>
-                  <a
-                    href='https://www.linkedin.com/in/muhammad-moiz-15b086212/ '
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <FaLinkedinIn />
-                    </div>
-                  </a>
-                  <a
-                    href='https://github.com/moiz67932'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <FaGithub />
-                    </div>
-                  </a>
-
+        {/* <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
+          <div className='lg:p-4 h-full '>
+            <div>
+              <Image
+                className='rounded-xl hover:scale-105 ease-in duration-300'
+                src={ContactImg}
+                alt='/'
+              />
+            </div>
+            <div>
+              <h2 className='py-2'>Muhammad Moiz</h2>
+              <p>Front-End Developer</p>
+              <p className='py-4'>
+                I am available for Freelance Projects. Contact
+                me and let&apos;s talk.
+              </p>
+            </div>
+            <div>
+              <p className='uppercase pt-8'>Connect With Me</p>
+              <div className='flex items-center justify-between py-4'>
+                <a
+                  href='https://www.linkedin.com/in/muhammad-moiz-15b086212/ '
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <AiOutlineMail />
+                    <FaLinkedinIn />
                   </div>
-                  <Link href='/resume'>
-                    <a>
-                      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsFillPersonLinesFill />
-                      </div>
-                    </a>
-                  </Link>
+                </a>
+                <a
+                  href='https://github.com/moiz67932'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaGithub />
+                  </div>
+                </a>
+
+                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                  <AiOutlineMail />
                 </div>
+                <Link href='/resume'>
+                  <a>
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                      <BsFillPersonLinesFill />
+                    </div>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
+        </div>  */}
 
-          {/* right */}
-          <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+        {/* right */}
+        {/* <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
                 action='https://getform.io/f/14032cd4-fec7-444e-8b04-305ce059c8ee'
@@ -128,8 +134,8 @@ const Contact = () => {
                 </button>
               </form>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div>
         <div className='flex justify-center py-12'>
           <Link href='/'>
             <a>
@@ -140,9 +146,11 @@ const Contact = () => {
                 />
               </div>
             </a>
-          </Link>
-        </div>
-      </div>
+          </Link> */}
+        {/* </div> */}
+
+      {/* </div> */}
+        <CalendlyEmbed url="https://calendly.com/moiz67932/intro-call" />
     </div>
   );
 };
